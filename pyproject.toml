@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nl2elem_to_csv"
-version = "0.1.1"
+version = "0.1.6"
 authors = [{ name = "Luke Hobbs" }]
 readme = "README.md"
 license = { file = "LICENSE" }

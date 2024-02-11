@@ -1,13 +1,13 @@
 import argparse
 
-import nl2elem_reader
-import data_processor
-import csv_writer
+from nl2elem_to_csv import nl2elem_reader
+from nl2elem_to_csv import csv_writer
+from nl2elem_to_csv import data_processor
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input', '-i', type=str, required=False, default='track.nl2elem')
+    parser.add_argument('--input', '-i', type=str, required=True)
     parser.add_argument('--output', '-o', type=str, required=False, default='track.csv')
     args = parser.parse_args()
 
